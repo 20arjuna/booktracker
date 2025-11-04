@@ -14,8 +14,8 @@ class Book(Base):
     author_first = sa.Column(sa.String, nullable=False)
     author_last = sa.Column(sa.String, nullable=False)
     year = sa.Column(sa.Integer, nullable=False)
-    rating = sa.Column(sa.Decimal, nullable=True)
+    rating = sa.Column(sa.Float, nullable=True)
     comments = sa.Column(sa.Text, nullable=True)
-    date_added = sa.Column(sa.DateTime, nullable=False)
+    date_started = sa.Column(sa.DateTime, nullable=True)
     date_completed = sa.Column(sa.DateTime, nullable=True)
 
